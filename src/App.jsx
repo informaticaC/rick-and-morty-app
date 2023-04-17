@@ -15,6 +15,7 @@ function App() {
   function handleLocationSubmit(e) {
     e.preventDefault()
     setInputValue(inputLocation.current.value)
+    inputLocation.current.value = ''
   }
   
   console.log(location)
@@ -25,7 +26,7 @@ function App() {
       </header>
       <h1 className='app__title'>Rick and Morty</h1>
       <form className='app__form' action='' onSubmit={handleLocationSubmit} >
-        <input className='app__input' type="number" ref={inputLocation}/>
+        <input className='app__input' type="number" ref={inputLocation} placeholder='Put a number between 1 and 126'/>
         <button className='app__btn'>Search</button>
       </form>
       {

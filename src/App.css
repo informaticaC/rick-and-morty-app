@@ -12,11 +12,19 @@
 .app__form{
     display: flex;
     justify-content: center;
+    padding-bottom: 2rem;
 }
 
 .app__input {
     padding: 0.4em 1.2em;
     border-radius: 0.5em 0 0 0.5em;
+    
+}
+
+.app__input::placeholder{
+    font-size: 0.8em;
+    opacity: 0.6;
+    
 }
 
 .app__btn{
@@ -24,4 +32,8 @@
     padding: 0 1em;
     background-color: rgb(125,199,14);
     color: white
+}
+
+.app__error{
+    text-align: center;
 }
