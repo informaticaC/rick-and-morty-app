@@ -14,15 +14,18 @@ function App() {
   const inputLocation = useRef()
   function handleLocationSubmit(e) {
     e.preventDefault()
-    setInputValue(inputLocation.current.value)
-    inputLocation.current.value = ''
+    if(inputLocation.current.value){
+      setInputValue(inputLocation.current.value)
+      inputLocation.current.value = ''
+    }
+    
   }
   
-  console.log(location)
+  // console.log(location)
   return (
     <div className="app" >
       <header className='header__img'>
-        <img src="./public/img/RandM2.svg" alt="" />
+        <img src="src\images\RandM2.svg" alt="" />
       </header>
       <h1 className='app__title'>Rick and Morty</h1>
       <form className='app__form' action='' onSubmit={handleLocationSubmit} >

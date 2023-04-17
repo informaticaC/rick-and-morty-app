@@ -18,20 +18,25 @@
 .app__input {
     padding: 0.4em 1.2em;
     border-radius: 0.5em 0 0 0.5em;
+    min-width: 230px;
     
 }
 
 .app__input::placeholder{
     font-size: 0.8em;
     opacity: 0.6;
-    
 }
 
 .app__btn{
     border-radius: 0 0.5rem  0.5rem 0;
     padding: 0 1em;
     background-color: rgb(125,199,14);
-    color: white
+    color: white;
+    cursor: pointer;
+}
+
+.app__btn:hover{
+    background-color: #6c903a;
 }
 
 .app__error{

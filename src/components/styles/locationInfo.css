@@ -27,8 +27,11 @@
     gap: 0.5em;
     color: #aaa;
     font-weight:lighter;
+    align-items: center;
 }
 
 .location__label{
     color: white;
+    padding-left: .5rem;
+    align-self: start;
 }
