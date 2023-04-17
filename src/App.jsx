@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="app" >
       <header className='header__img'>
-        <img src="public\img\bannerRaM3.png" alt="" />
+        <img src="src\components\styles\bannerRaM3.png" alt="Rick and Morty banner img" />
       </header>
       <h1 className='app__title'>Rick and Morty</h1>
       <form className='app__form' action='' onSubmit={handleLocationSubmit} >
