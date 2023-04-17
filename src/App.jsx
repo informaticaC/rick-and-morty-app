@@ -24,8 +24,8 @@ function App() {
   // console.log(location)
   return (
     <div className="app" >
-      <header className='header__img'>
-        <img src="src\components\styles\bannerRaM3.png" alt="Rick and Morty banner img" />
+      <header className='app__header-banner'>
+        {/* <img src="src\components\styles\bannerRaM3.png" alt="Rick and Morty banner" /> */}
       </header>
       <h1 className='app__title'>Rick and Morty</h1>
       <form className='app__form' action='' onSubmit={handleLocationSubmit} >
