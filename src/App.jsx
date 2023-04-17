@@ -20,6 +20,9 @@ function App() {
   console.log(location)
   return (
     <div className="app" >
+      <header className='header__img'>
+        <img src="./public/img/RandM2.svg" alt="" />
+      </header>
       <h1 className='app__title'>Rick and Morty</h1>
       <form className='app__form' action='' onSubmit={handleLocationSubmit} >
         <input className='app__input' type="number" ref={inputLocation}/>
